@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  /* align-items: center; */
+  /* align-items:; */
+}
+body {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-container {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 10px;
+  height: 700px;
+  width: 1015px;
+  background-color: transparent;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  position: absolute;
+  width: inherit;
+  padding: 0px;
+  margin-top: 360px;
+  z-index: 100;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  margin-top: -10px;
+  background-color: white;
+  cursor: grab;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background-color: rgb(231, 227, 227);
+  cursor: grabbing;
+}
+.image-before {
+  position: absolute;
+  padding: 0;
+  margin-left: 8.5px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/08/16/23/47/annas-hummingbird-8195150_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 0px 9px 1px #fffefe11;
+  height: inherit;
+  width: 1000px;
+  z-index: 10;
+  border-right: solid 0.5px rgba(255, 255, 255, 0.425);
+}
+
+.image-after {
+  position: absolute;
+  margin-left: 8.5px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/23/18/27/hummingbird-1854225_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: inherit;
+  width: 1000px;
+  /* z-index: -10; */
+}
