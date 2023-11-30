@@ -9,9 +9,8 @@ form {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 10px;
-  /* align-items: center; */
-  /* align-items:; */
 }
+
 body {
   position: absolute;
   left: 50%;
@@ -20,7 +19,6 @@ body {
 
 .image-container {
   display: flex;
-  /* justify-content: center; */
   margin-top: 10px;
   height: 700px;
   width: 1015px;

@@ -8,7 +8,7 @@ let beforeImageWidth = getComputedStyle(beforeImage).width.slice(
   0,
   getComputedStyle(beforeImage).width.indexOf("p")
 );
-console.log(beforeImageWidth);
+
 slider.addEventListener("input", (e) => {
   adjustImage(e.target);
 });
@@ -26,7 +26,6 @@ function updateImage() {
       beforeImage.style.background = `url("${e.target.result}")`;
     };
     reader.readAsDataURL(beforeSelector.files[0]);
-    console.log(beforeSelector.files);
   }
 
   if (afterSelector.files && afterSelector.files[0]) {
